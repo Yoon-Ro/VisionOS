@@ -48,7 +48,9 @@ LazyGrid means viewable components will only be loaded.
 - Difference is in Example #1 `[GridItem(.fixed(100))]` has changed to `let columns`.
 - Now `columns` has the data set of `[GridItem]` where we can change the data to initialize.
 
-![[Pasted image 20230907224858.png]]
+![Exmaple2Image](https://github.com/Yoon-Ro/VisionOS/blob/main/LazyGridItems/Attached%20File/Pasted%20image%2020230907224858.png?raw=true)
+
+
 
 
 
@@ -61,7 +63,9 @@ LazyGrid means viewable components will only be loaded.
 - We changed the value of GridItem, so now it has the fixed width of 50. 
 - So all contents will be fitted inside the 50 width grid.
 
-![[Pasted image 20230907224814.png]]
+
+![Exmaple3Image](https://github.com/Yoon-Ro/VisionOS/blob/main/LazyGridItems/Attached%20File/Pasted%20image%2020230907224814.png?raw=true)
+
 
 
 
@@ -77,7 +81,7 @@ LazyGrid means viewable components will only be loaded.
 ```
 - Now we have two columns of width of 50 each.
 
-![[Pasted image 20230907224749.png]]
+![Exmaple4Image](https://github.com/Yoon-Ro/VisionOS/blob/main/LazyGridItems/Attached%20File/Pasted%20image%2020230907224749.png?raw=true)
 
 
 # Customize Grid Items
@@ -110,7 +114,7 @@ LazyGrid means viewable components will only be loaded.
 
 ```
 
-![[Pasted image 20230907225350.png]]
+![Exmaple5Image](https://github.com/Yoon-Ro/VisionOS/blob/main/LazyGridItems/Attached%20File/Pasted%20image%2020230907225350.png?raw=true)
 
 
 ### .flexible()
@@ -127,7 +131,7 @@ LazyGrid means viewable components will only be loaded.
 ```
 - By using `.flexible()`, the size of three grids will be responsive.
 
-![[Pasted image 20230907225758.png]]
+![ExmapleFlexible](https://github.com/Yoon-Ro/VisionOS/blob/main/LazyGridItems/Attached%20File/Pasted%20image%2020230907225758.png?raw=true)
 
 
 ### .adaptive()
@@ -187,7 +191,7 @@ We rarely use `.adaptive()`, using flexible will be more useful and common.
 
 - `.Rectangle()` represent the Instagram profile section and ForEach represents the images.
 
-![[Pasted image 20230907230423.png]]
+![ExmapleUsecase](https://github.com/Yoon-Ro/VisionOS/blob/main/LazyGridItems/Attached%20File/Pasted%20image%2020230907230423.png?raw=true)
 
 
 # Another Way of LazyVGrid
@@ -253,7 +257,7 @@ We rarely use `.adaptive()`, using flexible will be more useful and common.
 ```
 - We can add a #section inside the content with header title and content of ForEach
 
-![[Pasted image 20230907232541.png]]
+![ExmapleSection](https://github.com/Yoon-Ro/VisionOS/blob/main/LazyGridItems/Attached%20File/Pasted%20image%2020230907232541.png?raw=true)
 
 
 ### #pinnedViews
@@ -263,4 +267,5 @@ We rarely use `.adaptive()`, using flexible will be more useful and common.
 ```
 
 - By writing, pinned views, we can make the declared section to be pinned on the top.
-![[Pasted image 20230907232908.png]]
+
+![ExmaplePin](https://github.com/Yoon-Ro/VisionOS/blob/main/LazyGridItems/Attached%20File/Pasted%20image%2020230907232908.png?raw=true)
