@@ -37,7 +37,7 @@ ZStack{
 ```
 
 
-![[Pasted image 20230915171335.png]]
+![Exmaple1Image](https://github.com/Yoon-Ro/VisionOS/blob/main/State/Attached%20Files/Pasted%20image%2020230915171335.png?raw=true)
 
 
 - We will add two buttons inside the HStack inside the VStack
@@ -51,7 +51,7 @@ HStack(spacing: 20){
 	}
 }
 ```
-![[Pasted image 20230915171513.png]]
+![Exmaple2Image](https://github.com/Yoon-Ro/VisionOS/blob/main/State/Attached%20Files/Pasted%20image%2020230915171513.png?raw=true)
 
 
 - Now we will give a button a function to change the value of the variables which @State will notice and update it in View.
@@ -69,7 +69,7 @@ HStack(spacing: 20){
 	}
 }
 ```
-![[Pasted image 20230915171826.png]]
+![Exmaple3Image](https://github.com/Yoon-Ro/VisionOS/blob/main/State/Attached%20Files/Pasted%20image%2020230915171826.png?raw=true)
 
 
 ![[@State]]
