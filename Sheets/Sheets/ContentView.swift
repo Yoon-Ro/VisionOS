@@ -22,12 +22,12 @@ struct ContentView: View {
                 }, label: {
                     Text("Button")
                 })
-                .fullScreenCover(isPresented: $showSheet, content: {
-                    SecondScreen()
-                })
-//                .sheet(isPresented: $showSheet, content: {
+//                .fullScreenCover(isPresented: $showSheet, content: {
 //                    SecondScreen()
 //                })
+                .sheet(isPresented: $showSheet, content: {
+                    SecondScreen()
+                })
             }
         }
     }
