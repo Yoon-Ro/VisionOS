@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseFile</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/Template.playgroundpage/main.swift</string>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// We can repeat and fix in array, dictionary, or set
+
+// Hree's an array of string, and print each string like following code
+
+let platforms = ["iOS", "macOS", "tvOS", "watchOS"]
+
+// We call the value of os from platforms.
+for os in platforms {
+    print("Swift works great on \(os).")
+}
+
+// it will print 4 lines of text
+// - code inside the braces is "loop body"
+// - one cycle through the loop body is "loop iteration" -&gt; this one has 4 loop iteractions
+// - os is "loop variable", it only exists inside the loop body and change to a new value
+
+
+// we can loop over the fixed amount of number
+
+for i in 1...12 {
+  print("5 x \(i) is \(5 * i)")  
+}
+
+// 1...12 is "range"
+
+// we can put loops insid ethe loops, "nested loops"
+
+for i in 1...12 {
+    print ("The \(i) times table")
+        
+    for j in 1...12{
+        print(" \(j) x \(i) is \(j * i)")
+    }
+    
+      print()
+}
+
+// print() will just print a new line, it just looks nicer
+
+
+// we can also exclude the last number
+
+for i in 1...5 {
+    print("Counting from 1 through 5 : \(i)")
+}
+
+for i in 1..&lt;5 {
+    print("Counting from 1 to 5 : \(i)")
+}
+
+// Tip: ..&lt; is really helpful for working with arrays, where we count from 0 and often want to count up to but excluding the number of items in the array.
+
+
+
+
+// instead of looping, we can run a code a certain number of times.
+// by replacing i with an underscore.
+var lyric = "Haters gonna"
+
+for _ in 1...5 {
+    lyric += " hate"
+}
+
+print(lyric)
+
+
+
+
+
+
+var countdown = 10
+
+while countdown &gt; 0 {
+    print("\(countdown)...")
+    countdown -= 1
+}
+
+print("Blast off")
+
+
+var roll = 0
+while roll != 20 {
+    roll = Int.random(in: 1...20)
+    print("I rolled \(roll)")
+}
+print("Critical hit")
+
+
+
+
+
+
+let filenames = ["me.jpg", "work.txt", "sophie.jpg"]
+
+for filename in filenames {
+    if filename.hasSuffix(".jpg") != true {
+        continue
+    }
+    
+    print("Found picture: \(filename)")
+}
+
+
+
+let number1 = 4
+let number2 = 11
+var multiple = [Int]()
+
+for i in 1...100_000{
+    
+    if i.isMultiple(of: number1) &amp;&amp; i.isMultiple(of: number2){
+        
+        multiple.append(i)
+        
+        if multiple.count == 10 {
+            break
+        }
+    }
+}
+
+print(multiple)
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 2182}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
