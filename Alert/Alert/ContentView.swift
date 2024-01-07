@@ -10,17 +10,47 @@ import RealityKit
 import RealityKitContent
 
 struct ContentView: View {
+    
+    @State var showAlert: Bool = false
+    @State var color: Color = .red
+    @State var alertType: MyAlert? = nil
+    
+    enum MyAlert {
+        case success
+        case error
+    }
+    
     var body: some View {
-        VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
-
-            Text("Hello, world!")
+        HStack{
+            Button("BUTTON 1"){
+                alertType = .error
+                showAlert.toggle()
+            }
+            Button("BUTTON 2"){
+                alertType = .success
+                showAlert.toggle()
+            }
+        }.alert(isPresented: $showAlert){
+            getAlert()
         }
-        .padding()
+        
+        Circle().frame(width: 100, height:100).foregroundStyle(color)
+    }
+    
+    func getAlert() -> Alert {
+        switch alertType{
+        case .error:
+                return Alert(title: Text("There was an error"))
+        case .success:
+                return Alert(title: Text("Successful"),         primaryButton: .destructive(Text("DELETE"), action: {
+                    color = .red
+                }),
+                secondaryButton:. cancel())
+        default:
+            return Alert (title: Text("NOPE"))
+        }
     }
 }
-
 #Preview(windowStyle: .automatic) {
     ContentView()
 }
