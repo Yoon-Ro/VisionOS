@@ -39,7 +39,7 @@ struct ContentView: View {
                     Image(systemName: "person.fill")
                 }
                 
-                ToolbarItem(placement: .automatic){
+                ToolbarItem(placement: .bottomOrnament){
                     HStack{
                         HStack{
                             Text("Bottom Ornanment")
