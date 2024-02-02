@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A50C3ED2B6BE880000A4BD5 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 6A50C3EC2B6BE880000A4BD5 /* RealityKitContent */; };
+		6A50C3EF2B6BE880000A4BD5 /* StepperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A50C3EE2B6BE880000A4BD5 /* StepperApp.swift */; };
+		6A50C3F12B6BE880000A4BD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A50C3F02B6BE880000A4BD5 /* ContentView.swift */; };
+		6A50C3F32B6BE881000A4BD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A50C3F22B6BE881000A4BD5 /* Assets.xcassets */; };
+		6A50C3F62B6BE881000A4BD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A50C3F52B6BE881000A4BD5 /* Preview Assets.xcassets */; };
+		6A50C4012B6BE882000A4BD5 /* StepperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A50C4002B6BE882000A4BD5 /* StepperTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A50C3FD2B6BE881000A4BD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A50C3DF2B6BE880000A4BD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A50C3E62B6BE880000A4BD5;
+			remoteInfo = Stepper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A50C3E72B6BE880000A4BD5 /* Stepper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stepper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A50C3EB2B6BE880000A4BD5 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		6A50C3EE2B6BE880000A4BD5 /* StepperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperApp.swift; sourceTree = "<group>"; };
+		6A50C3F02B6BE880000A4BD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6A50C3F22B6BE881000A4BD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A50C3F52B6BE881000A4BD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6A50C3F72B6BE881000A4BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A50C3FC2B6BE881000A4BD5 /* StepperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A50C4002B6BE882000A4BD5 /* StepperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A50C3E42B6BE880000A4BD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A50C3ED2B6BE880000A4BD5 /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A50C3F92B6BE881000A4BD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A50C3DE2B6BE880000A4BD5 = {
+			isa = PBXGroup;
+			children = (
+				6A50C3E92B6BE880000A4BD5 /* Stepper */,
+				6A50C3EA2B6BE880000A4BD5 /* Packages */,
+				6A50C3FF2B6BE881000A4BD5 /* StepperTests */,
+				6A50C3E82B6BE880000A4BD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A50C3E82B6BE880000A4BD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A50C3E72B6BE880000A4BD5 /* Stepper.app */,
+				6A50C3FC2B6BE881000A4BD5 /* StepperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A50C3E92B6BE880000A4BD5 /* Stepper */ = {
+			isa = PBXGroup;
+			children = (
+				6A50C3EE2B6BE880000A4BD5 /* StepperApp.swift */,
+				6A50C3F02B6BE880000A4BD5 /* ContentView.swift */,
+				6A50C3F22B6BE881000A4BD5 /* Assets.xcassets */,
+				6A50C3F72B6BE881000A4BD5 /* Info.plist */,
+				6A50C3F42B6BE881000A4BD5 /* Preview Content */,
+			);
+			path = Stepper;
+			sourceTree = "<group>";
+		};
+		6A50C3EA2B6BE880000A4BD5 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				6A50C3EB2B6BE880000A4BD5 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		6A50C3F42B6BE881000A4BD5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6A50C3F52B6BE881000A4BD5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6A50C3FF2B6BE881000A4BD5 /* StepperTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A50C4002B6BE882000A4BD5 /* StepperTests.swift */,
+			);
+			path = StepperTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A50C3E62B6BE880000A4BD5 /* Stepper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A50C4042B6BE882000A4BD5 /* Build configuration list for PBXNativeTarget "Stepper" */;
+			buildPhases = (
+				6A50C3E32B6BE880000A4BD5 /* Sources */,
+				6A50C3E42B6BE880000A4BD5 /* Frameworks */,
+				6A50C3E52B6BE880000A4BD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stepper;
+			packageProductDependencies = (
+				6A50C3EC2B6BE880000A4BD5 /* RealityKitContent */,
+			);
+			productName = Stepper;
+			productReference = 6A50C3E72B6BE880000A4BD5 /* Stepper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A50C3FB2B6BE881000A4BD5 /* StepperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A50C4072B6BE882000A4BD5 /* Build configuration list for PBXNativeTarget "StepperTests" */;
+			buildPhases = (
+				6A50C3F82B6BE881000A4BD5 /* Sources */,
+				6A50C3F92B6BE881000A4BD5 /* Frameworks */,
+				6A50C3FA2B6BE881000A4BD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A50C3FE2B6BE881000A4BD5 /* PBXTargetDependency */,
+			);
+			name = StepperTests;
+			productName = StepperTests;
+			productReference = 6A50C3FC2B6BE881000A4BD5 /* StepperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A50C3DF2B6BE880000A4BD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					6A50C3E62B6BE880000A4BD5 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					6A50C3FB2B6BE881000A4BD5 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 6A50C3E62B6BE880000A4BD5;
+					};
+				};
+			};
+			buildConfigurationList = 6A50C3E22B6BE880000A4BD5 /* Build configuration list for PBXProject "Stepper" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A50C3DE2B6BE880000A4BD5;
+			productRefGroup = 6A50C3E82B6BE880000A4BD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A50C3E62B6BE880000A4BD5 /* Stepper */,
+				6A50C3FB2B6BE881000A4BD5 /* StepperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A50C3E52B6BE880000A4BD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A50C3F62B6BE881000A4BD5 /* Preview Assets.xcassets in Resources */,
+				6A50C3F32B6BE881000A4BD5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A50C3FA2B6BE881000A4BD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A50C3E32B6BE880000A4BD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A50C3F12B6BE880000A4BD5 /* ContentView.swift in Sources */,
+				6A50C3EF2B6BE880000A4BD5 /* StepperApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A50C3F82B6BE881000A4BD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A50C4012B6BE882000A4BD5 /* StepperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A50C3FE2B6BE881000A4BD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A50C3E62B6BE880000A4BD5 /* Stepper */;
+			targetProxy = 6A50C3FD2B6BE881000A4BD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6A50C4022B6BE882000A4BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		6A50C4032B6BE882000A4BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		6A50C4052B6BE882000A4BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Stepper/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yoon-Ro.Stepper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		6A50C4062B6BE882000A4BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Stepper/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yoon-Ro.Stepper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		6A50C4082B6BE882000A4BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yoon-Ro.StepperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stepper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stepper";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		6A50C4092B6BE882000A4BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yoon-Ro.StepperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stepper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stepper";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A50C3E22B6BE880000A4BD5 /* Build configuration list for PBXProject "Stepper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A50C4022B6BE882000A4BD5 /* Debug */,
+				6A50C4032B6BE882000A4BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A50C4042B6BE882000A4BD5 /* Build configuration list for PBXNativeTarget "Stepper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A50C4052B6BE882000A4BD5 /* Debug */,
+				6A50C4062B6BE882000A4BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A50C4072B6BE882000A4BD5 /* Build configuration list for PBXNativeTarget "StepperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A50C4082B6BE882000A4BD5 /* Debug */,
+				6A50C4092B6BE882000A4BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A50C3EC2B6BE880000A4BD5 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6A50C3DF2B6BE880000A4BD5 /* Project object */;
+}
