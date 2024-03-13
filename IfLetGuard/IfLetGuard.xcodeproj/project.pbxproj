@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6AABBA242BA1278100FB918D /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 6AABBA232BA1278100FB918D /* RealityKitContent */; };
+		6AABBA262BA1278100FB918D /* IfLetGuardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AABBA252BA1278100FB918D /* IfLetGuardApp.swift */; };
+		6AABBA282BA1278100FB918D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AABBA272BA1278100FB918D /* ContentView.swift */; };
+		6AABBA2A2BA1278200FB918D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AABBA292BA1278200FB918D /* Assets.xcassets */; };
+		6AABBA2D2BA1278200FB918D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AABBA2C2BA1278200FB918D /* Preview Assets.xcassets */; };
+		6AABBA382BA1278300FB918D /* IfLetGuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AABBA372BA1278300FB918D /* IfLetGuardTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6AABBA342BA1278300FB918D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AABBA162BA1278100FB918D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AABBA1D2BA1278100FB918D;
+			remoteInfo = IfLetGuard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6AABBA1E2BA1278100FB918D /* IfLetGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IfLetGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AABBA222BA1278100FB918D /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		6AABBA252BA1278100FB918D /* IfLetGuardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLetGuardApp.swift; sourceTree = "<group>"; };
+		6AABBA272BA1278100FB918D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6AABBA292BA1278200FB918D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6AABBA2C2BA1278200FB918D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6AABBA2E2BA1278200FB918D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AABBA332BA1278300FB918D /* IfLetGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IfLetGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AABBA372BA1278300FB918D /* IfLetGuardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLetGuardTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AABBA1B2BA1278100FB918D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AABBA242BA1278100FB918D /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AABBA302BA1278300FB918D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6AABBA152BA1278100FB918D = {
+			isa = PBXGroup;
+			children = (
+				6AABBA202BA1278100FB918D /* IfLetGuard */,
+				6AABBA212BA1278100FB918D /* Packages */,
+				6AABBA362BA1278300FB918D /* IfLetGuardTests */,
+				6AABBA1F2BA1278100FB918D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6AABBA1F2BA1278100FB918D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AABBA1E2BA1278100FB918D /* IfLetGuard.app */,
+				6AABBA332BA1278300FB918D /* IfLetGuardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AABBA202BA1278100FB918D /* IfLetGuard */ = {
+			isa = PBXGroup;
+			children = (
+				6AABBA252BA1278100FB918D /* IfLetGuardApp.swift */,
+				6AABBA272BA1278100FB918D /* ContentView.swift */,
+				6AABBA292BA1278200FB918D /* Assets.xcassets */,
+				6AABBA2E2BA1278200FB918D /* Info.plist */,
+				6AABBA2B2BA1278200FB918D /* Preview Content */,
+			);
+			path = IfLetGuard;
+			sourceTree = "<group>";
+		};
+		6AABBA212BA1278100FB918D /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				6AABBA222BA1278100FB918D /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		6AABBA2B2BA1278200FB918D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6AABBA2C2BA1278200FB918D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6AABBA362BA1278300FB918D /* IfLetGuardTests */ = {
+			isa = PBXGroup;
+			children = (
+				6AABBA372BA1278300FB918D /* IfLetGuardTests.swift */,
+			);
+			path = IfLetGuardTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AABBA1D2BA1278100FB918D /* IfLetGuard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AABBA3B2BA1278300FB918D /* Build configuration list for PBXNativeTarget "IfLetGuard" */;
+			buildPhases = (
+				6AABBA1A2BA1278100FB918D /* Sources */,
+				6AABBA1B2BA1278100FB918D /* Frameworks */,
+				6AABBA1C2BA1278100FB918D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IfLetGuard;
+			packageProductDependencies = (
+				6AABBA232BA1278100FB918D /* RealityKitContent */,
+			);
+			productName = IfLetGuard;
+			productReference = 6AABBA1E2BA1278100FB918D /* IfLetGuard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6AABBA322BA1278300FB918D /* IfLetGuardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AABBA3E2BA1278300FB918D /* Build configuration list for PBXNativeTarget "IfLetGuardTests" */;
+			buildPhases = (
+				6AABBA2F2BA1278300FB918D /* Sources */,
+				6AABBA302BA1278300FB918D /* Frameworks */,
+				6AABBA312BA1278300FB918D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AABBA352BA1278300FB918D /* PBXTargetDependency */,
+			);
+			name = IfLetGuardTests;
+			productName = IfLetGuardTests;
+			productReference = 6AABBA332BA1278300FB918D /* IfLetGuardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AABBA162BA1278100FB918D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					6AABBA1D2BA1278100FB918D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					6AABBA322BA1278300FB918D = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 6AABBA1D2BA1278100FB918D;
+					};
+				};
+			};
+			buildConfigurationList = 6AABBA192BA1278100FB918D /* Build configuration list for PBXProject "IfLetGuard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6AABBA152BA1278100FB918D;
+			productRefGroup = 6AABBA1F2BA1278100FB918D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AABBA1D2BA1278100FB918D /* IfLetGuard */,
+				6AABBA322BA1278300FB918D /* IfLetGuardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AABBA1C2BA1278100FB918D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AABBA2D2BA1278200FB918D /* Preview Assets.xcassets in Resources */,
+				6AABBA2A2BA1278200FB918D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AABBA312BA1278300FB918D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AABBA1A2BA1278100FB918D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AABBA282BA1278100FB918D /* ContentView.swift in Sources */,
+				6AABBA262BA1278100FB918D /* IfLetGuardApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AABBA2F2BA1278300FB918D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AABBA382BA1278300FB918D /* IfLetGuardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6AABBA352BA1278300FB918D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AABBA1D2BA1278100FB918D /* IfLetGuard */;
+			targetProxy = 6AABBA342BA1278300FB918D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6AABBA392BA1278300FB918D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		6AABBA3A2BA1278300FB918D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		6AABBA3C2BA1278300FB918D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IfLetGuard/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yoon-Ro.IfLetGuard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		6AABBA3D2BA1278300FB918D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IfLetGuard/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yoon-Ro.IfLetGuard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		6AABBA3F2BA1278300FB918D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yoon-Ro.IfLetGuardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IfLetGuard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IfLetGuard";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		6AABBA402BA1278300FB918D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yoon-Ro.IfLetGuardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IfLetGuard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IfLetGuard";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AABBA192BA1278100FB918D /* Build configuration list for PBXProject "IfLetGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AABBA392BA1278300FB918D /* Debug */,
+				6AABBA3A2BA1278300FB918D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AABBA3B2BA1278300FB918D /* Build configuration list for PBXNativeTarget "IfLetGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AABBA3C2BA1278300FB918D /* Debug */,
+				6AABBA3D2BA1278300FB918D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AABBA3E2BA1278300FB918D /* Build configuration list for PBXNativeTarget "IfLetGuardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AABBA3F2BA1278300FB918D /* Debug */,
+				6AABBA402BA1278300FB918D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6AABBA232BA1278100FB918D /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6AABBA162BA1278100FB918D /* Project object */;
+}
