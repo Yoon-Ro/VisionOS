@@ -21,8 +21,19 @@ struct OnboardingView: View {
     
     @State var onboardingState: Int = 0
     
+    
     @State var name: String = ""
     @State var age: Double = 50
+    @State var gender: String = ""
+    
+    @State var alertTitle: String = ""
+    @State var showAlert: Bool = false
+    
+    @AppStorage("name") var currentUserName: String?
+    @AppStorage("age") var currentUserAge: Int?
+    @AppStorage("gender") var currentUserGender: String?
+    @AppStorage("signed_in") var currentUserSignedIn: Bool = false
+
     
     var body: some View {
         ZStack{
@@ -37,6 +48,9 @@ struct OnboardingView: View {
                     
                 case 2:
                     addAgeSection
+                    
+                case 3:
+                    addGenderSection
                     
                 
 
@@ -53,6 +67,9 @@ struct OnboardingView: View {
                 }.padding()
             }
         }
+        .alert(isPresented: $showAlert, content: {
+            return Alert(title: Text(alertTitle))
+        })
     }
 }
     
@@ -64,11 +81,14 @@ struct OnboardingView: View {
         private var bottomButton: some View {
             Text(onboardingState == 0 ? "SIGN UP" : onboardingState == 2 ? "FINISH" : "NEXT")
                 .font(.headline)
-                .foregroundStyle(.blue)
+                .foregroundStyle(.white)
                 .frame(height: 55)
                 .frame(maxWidth: .infinity)
-                .background(.white)
-                .clipShape(.buttonBorder)
+                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 25, height: 25)))
+                .background(.blue)
+                .glassBackgroundEffect()
+ 
+
                 .onTapGesture {
                     handleNextButtonPressed()
                 }
@@ -84,7 +104,7 @@ struct OnboardingView: View {
                     .scaledToFit()
                     .frame(width:200, height: 200)
                     .foregroundStyle(.white)
-                Text("Find your match")
+                Text("Onboarding")
                     .font(.extraLargeTitle)
                     .fontWeight(.semibold)
                     .foregroundStyle(.white)
@@ -123,8 +143,9 @@ struct OnboardingView: View {
                     .frame(height: 55)
                     .foregroundStyle(.blue)
                     .padding(.horizontal)
-                    .background(Color(.gray))
+                    .glassBackgroundEffect()
                     .clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10)))
+                
                 
                 Spacer()
                 Spacer()
@@ -161,6 +182,35 @@ struct OnboardingView: View {
             .padding()
         }
         
+        private var addGenderSection: some View {
+            VStack(spacing: 40){
+                Spacer()
+
+ 
+                Text("What's your gender?")
+                    .font(.extraLargeTitle)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.white)
+                
+                Picker(selection: $gender) {
+                    Text("Male").tag("Male")
+                    Text("Female").tag("Female")
+                    Text("None").tag("None")
+
+                } label: {
+                    Text(gender.count > 1 ? gender : "Select a gender")
+                } .pickerStyle(MenuPickerStyle())
+
+                
+                
+                Spacer()
+                Spacer()
+
+            }
+            .multilineTextAlignment(.center)
+            .padding()
+        }
+        
     }
     
     
@@ -169,11 +219,48 @@ struct OnboardingView: View {
 extension OnboardingView {
     
     func handleNextButtonPressed() {
-        withAnimation(.spring()) {
+        
+        // CHeck Input
+        switch onboardingState {
+        case 1:
+            guard name.count >= 3 else {
+                showAlert(title: "Your name must be at least 3 characters long!")
+                return
+            }
+            
+        case 3:
+            guard gender.count > 1 else {
+                showAlert(title: "Please select a gender before moving forward!")
+                return
+            }
+        default:
+            break
+        }
+        
+        
+        // GO TO NEXT SECTION
+        if onboardingState == 3 {
+            signIn()        } else {
             onboardingState += 1
         }
     }
+    
+    
+    func signIn() {
+        currentUserName = name
+        currentUserAge = Int(age)
+        currentUserGender = gender
+        currentUserSignedIn = true
+    }
+    
+    func showAlert(title: String) {
+        alertTitle = title
+        showAlert.toggle()
+    }
+    
 }
+
+
 
     
     #Preview {

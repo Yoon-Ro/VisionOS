@@ -14,12 +14,12 @@ struct IntroView: View {
     var body: some View {
         ZStack{
             //background
-            RadialGradient(
-                gradient: Gradient(colors: [Color(#colorLiteral(red: 0.5818830132, green: 0.2156915367, blue: 1, alpha: 1)), Color(#colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1))]),
-                center: .topLeading,
-                startRadius: 5,
-                endRadius: 800)
-            .ignoresSafeArea()
+//            RadialGradient(
+//                gradient: Gradient(colors: [Color(#colorLiteral(red: 0.5818830132, green: 0.2156915367, blue: 1, alpha: 1)), Color(#colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1))]),
+//                center: .topLeading,
+//                startRadius: 5,
+//                endRadius: 800)
+//            .ignoresSafeArea()
             
             
             //if user is signed in
@@ -28,11 +28,11 @@ struct IntroView: View {
             //onboarding view
             
             if currentUserSignedIn {
-                Text("Profile View")
+                ProfileView()
             } else {
                 OnboardingView()
             }
-        }
+        }.glassBackgroundEffect()
     }
 }
 
