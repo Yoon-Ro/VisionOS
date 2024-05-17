@@ -8,38 +8,48 @@
 import SwiftUI
 
 struct ListView: View {
-    @State var items: [ItemModel] = [
-        ItemModel(title: "This is the first title", isCompleted: false),
-        ItemModel(title: "This is the second title", isCompleted: true),
-        ItemModel(title: "This is the third title", isCompleted: false)
-    ]
+    
+    @EnvironmentObject var listViewModel: ListViewModel
+
 
     var body: some View {
         List {
-            ForEach(items) { item in
+            ForEach(listViewModel.items) { item in
                 ListRowView(item: item)
+                    .onTapGesture {
+                        withAnimation(.spring) {
+                            listViewModel.updateItem(item: item)
+                        }
+                    }
             }
+            .onDelete(perform: listViewModel.deleteItem)
+            .onMove(perform: listViewModel.moveItem)
         }
         .listStyle(.plain)
         .navigationTitle("ToDo List 📝")
         .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
+            ToolbarItem(placement: .automatic) {
                 EditButton()
             }
 
             ToolbarItem(placement: .bottomBar) { // Changed placement for better visibility
                 HStack {
-                    NavigationLink("Add", destination: AddView(textFieldText: ""))
+                    NavigationLink("Add", destination: AddView(textFieldText: "", alertTitle: ""))
                         .background(.blue)
                         .clipShape(RoundedRectangle(cornerRadius: 25.0))
                 }
             }
         }
     }
+    
+
+    
+    
+    
 }
 
 #Preview {
     NavigationStack {
         ListView()
-    }
+    }.environmentObject(ListViewModel())
 }

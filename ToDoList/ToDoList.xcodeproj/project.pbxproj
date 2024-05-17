@@ -7,19 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A346D132BF585CC009FDE33 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 6A346D122BF585CC009FDE33 /* RealityKitContent */; };
 		6A346D152BF585CC009FDE33 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A346D142BF585CC009FDE33 /* ToDoListApp.swift */; };
 		6A346D192BF585CD009FDE33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A346D182BF585CD009FDE33 /* Assets.xcassets */; };
 		6A346D1C2BF585CD009FDE33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A346D1B2BF585CD009FDE33 /* Preview Assets.xcassets */; };
 		6A346D252BF58648009FDE33 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A346D242BF58648009FDE33 /* ListView.swift */; };
 		6A346D272BF5876B009FDE33 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A346D262BF5876B009FDE33 /* ListRowView.swift */; };
 		6A346D292BF58A0F009FDE33 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A346D282BF58A0F009FDE33 /* AddView.swift */; };
+		6A999EB02BF6D53A00C6972E /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A999EAF2BF6D53A00C6972E /* ListViewModel.swift */; };
 		6A9E2A1A2BF58FF000C9FB26 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9E2A192BF58FF000C9FB26 /* ItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6A346D0D2BF585CC009FDE33 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A346D112BF585CC009FDE33 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		6A346D142BF585CC009FDE33 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		6A346D182BF585CD009FDE33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A346D1B2BF585CD009FDE33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -27,6 +26,7 @@
 		6A346D242BF58648009FDE33 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		6A346D262BF5876B009FDE33 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		6A346D282BF58A0F009FDE33 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		6A999EAF2BF6D53A00C6972E /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListViewModel.swift; path = ToDoList/ViewModels/ListViewModel.swift; sourceTree = SOURCE_ROOT; };
 		6A9E2A192BF58FF000C9FB26 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,7 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A346D132BF585CC009FDE33 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				6A346D0F2BF585CC009FDE33 /* ToDoList */,
-				6A346D102BF585CC009FDE33 /* Packages */,
 				6A346D0E2BF585CC009FDE33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,21 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				6A346D142BF585CC009FDE33 /* ToDoListApp.swift */,
+				6A999EAE2BF6D51900C6972E /* New Group */,
 				6A9E2A182BF58FD500C9FB26 /* Models */,
-				6A346D182BF585CD009FDE33 /* Assets.xcassets */,
 				6A346D232BF58633009FDE33 /* Views */,
 				6A346D1D2BF585CD009FDE33 /* Info.plist */,
+				6A346D182BF585CD009FDE33 /* Assets.xcassets */,
 				6A346D1A2BF585CD009FDE33 /* Preview Content */,
 			);
 			path = ToDoList;
-			sourceTree = "<group>";
-		};
-		6A346D102BF585CC009FDE33 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				6A346D112BF585CC009FDE33 /* RealityKitContent */,
-			);
-			path = Packages;
 			sourceTree = "<group>";
 		};
 		6A346D1A2BF585CD009FDE33 /* Preview Content */ = {
@@ -96,6 +87,14 @@
 				6A346D262BF5876B009FDE33 /* ListRowView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		6A999EAE2BF6D51900C6972E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				6A999EAF2BF6D53A00C6972E /* ListViewModel.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		6A9E2A182BF58FD500C9FB26 /* Models */ = {
@@ -123,7 +122,6 @@
 			);
 			name = ToDoList;
 			packageProductDependencies = (
-				6A346D122BF585CC009FDE33 /* RealityKitContent */,
 			);
 			productName = ToDoList;
 			productReference = 6A346D0D2BF585CC009FDE33 /* ToDoList.app */;
@@ -181,6 +179,7 @@
 			files = (
 				6A9E2A1A2BF58FF000C9FB26 /* ItemModel.swift in Sources */,
 				6A346D292BF58A0F009FDE33 /* AddView.swift in Sources */,
+				6A999EB02BF6D53A00C6972E /* ListViewModel.swift in Sources */,
 				6A346D152BF585CC009FDE33 /* ToDoListApp.swift in Sources */,
 				6A346D252BF58648009FDE33 /* ListView.swift in Sources */,
 				6A346D272BF5876B009FDE33 /* ListRowView.swift in Sources */,
@@ -381,13 +380,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6A346D122BF585CC009FDE33 /* RealityKitContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A346D052BF585CC009FDE33 /* Project object */;
 }
