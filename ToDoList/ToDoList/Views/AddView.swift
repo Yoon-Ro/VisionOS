@@ -12,7 +12,7 @@ struct AddView: View {
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var listViewModel: ListViewModel
     @State var textFieldText: String = ""
-    
+    @FocusState private var textFieldTextFocus: Bool
     @State var alertTitle: String
     @State var showAlert: Bool = false
     
@@ -20,6 +20,7 @@ struct AddView: View {
         ScrollView{
             VStack {
                 TextField("Type something here...", text: $textFieldText)
+                    .focused($textFieldTextFocus)
                     .padding()
                     .glassBackgroundEffect()
                 .foregroundStyle(.white)
@@ -37,6 +38,12 @@ struct AddView: View {
         .alert(isPresented: $showAlert, content: {
             getAlert()
         })
+        
+        .onAppear{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                self.textFieldTextFocus = true
+                }
+        }
     }
     
     func saveButtonPressed() {
