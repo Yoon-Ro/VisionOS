@@ -8,7 +8,14 @@
 import Foundation
 import MapKit
 
-struct Location: Identifiable {
+struct Location: Identifiable, Equatable {
+    
+    //Equatble
+    static func == (lhs: Location, rhs: Location) -> Bool {
+        lhs.id == rhs.id
+        //if two locations have same id,  then they are the same loction.
+    }
+    
     // all the data for specific location
     
 //    let id = UUID().uuidString

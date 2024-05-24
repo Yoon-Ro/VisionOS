@@ -7,6 +7,7 @@
 
 import Foundation
 import MapKit
+import SwiftUI
 
 
 class LocationsViewModel: ObservableObject {
@@ -22,8 +23,14 @@ class LocationsViewModel: ObservableObject {
         }
     }
     
+    // Current region on map
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+    
+    
+    // sho list of locations
+    @Published var showLocationList: Bool = false
+    
     
     init() {
         let locations = LocationsDataService.locations
@@ -40,6 +47,40 @@ class LocationsViewModel: ObservableObject {
                 span: mapSpan)
         
 
+    }
+    
+  func toggleLocationsList() {
+      withAnimation(.easeInOut){
+          showLocationList.toggle()
+      }
+    }
+    
+    func showNextLocation(location: Location) {
+        withAnimation(.easeInOut){
+            mapLocation = location //Update the mapLocation
+            showLocationList = false //it toggles to close showLocationList
+        }
+    }
+    
+    func nextButtonPressed() {
+        
+        //Get the current index
+        guard let currentIndex = locations.firstIndex(where: { $0 == mapLocation }) else {
+            print("Could not find current index in lcoations array! SHould never happen.")
+            return
+        }
+        
+        // Chec if the currentIndex is valid
+        let nextIndex = currentIndex + 1
+        guard locations.indices.contains(nextIndex) else{
+            guard let firstLocation = locations.first else { return }
+            showNextLocation(location: firstLocation)
+            return
+        }
+        
+        let nextLocation = locations[nextIndex]
+        showNextLocation(location: nextLocation)
+        
     }
     
 }

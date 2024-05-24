@@ -20,18 +20,37 @@ struct LocationsView: View {
         
 
 
-        ZStack {
-            Map() {
-                Marker("Your Location", coordinate: vm.mapRegion.center)
-            }
-            .mapStyle(.hybrid(elevation: .realistic))
-            
+            ZStack {
+        
+                Map() {
+                    Marker("\(vm.mapLocation.name)", coordinate: vm.mapRegion.center) }
+                      .mapStyle(.hybrid(elevation:.realistic))
+            .shadow(radius: 20)
+ 
+//                mapLayer
+                
+                
             VStack(spacing: 0){
                 header
                     .glassBackgroundEffect()
                     .padding(.top, 20)
                     .frame(depth: 70)
+
+
                 Spacer()
+                
+                ZStack {
+                    ForEach(vm.locations) { location in
+                        if vm.mapLocation == location {
+                            LocationPreview(location: location)
+                                .padding()
+                                .frame(width: 400)
+                                .transition(.asymmetric(insertion: .move(edge: .bottom), removal: .move(edge: .bottom)))
+                        }
+     
+                            
+                    }
+                }
             }
         }
     }
@@ -61,22 +80,58 @@ struct LocationsView: View {
 
 extension LocationsView {
     private var header: some View {
-        HStack(alignment: .center) { // Add this modifier to center the content
+        
+        VStack {
+            Button(action: vm.toggleLocationsList, label: {
+                HStack(alignment: .center) { // Add this modifier to center the content
+                    
+                    // Overlay
+                    Image(systemName: vm.showLocationList ? "arrow.up" : "arrow.down")
+                        .font(.headline)
+                        .foregroundStyle(.primary)
+
+                    
+                    Text(vm.mapLocation.name + ", " + vm.mapLocation.cityName)
+                        .font(.title)
+                        .foregroundStyle(.white)                     .fontWeight(.bold)
+                        .animation(.none, value: vm.locations)
+                    
+         
+
+
+
+                }.padding()
+            }
+            )
+                
             
-            // Overlay
-            Image(systemName: "arrow.down")
-                .font(.headline)
-                .foregroundStyle(.primary)
-//                .padding(.leading, 8)
-
             
-            Text(vm.mapLocation.name + ", " + vm.mapLocation.cityName)
-                .font(.title)
-                .foregroundStyle(.white)
-                .fontWeight(.bold)
-
-
-
-        }.padding()
+            if vm.showLocationList {
+                LocationsListView()
+            }
+         
+        }
     }
-}
+    
+    private var mapLayer: some View {
+        Map {
+            ForEach(vm.locations) { location in
+                Annotation(location.name, coordinate: vm.mapRegion.center) { // Use Annotation directly
+                    LocationMapAnnotationView()
+                        .scaleEffect(vm.mapLocation == location ? 1 : 0.7)
+                        .shadow(radius: 10)
+                        .onTapGesture {
+                            vm.showNextLocation(location: location)
+                        }
+                }
+            }
+        }
+        .mapStyle(.standard(elevation: .realistic)) // Example style, adjust as needed
+
+    }
+
+    
+    
+    
+    
+}//EXTENSION
